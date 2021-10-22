@@ -17,19 +17,35 @@
     <script type="text/javascript" src="../prototype.js"></script>
     <script type="text/javascript" src="../common.js"></script>
     <script type="text/javascript" src="wuhu.js"></script>
+    <script type="text/javascript" src="tdf2021-bg.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="lib/js/html5shiv.js"></script>
     <![endif]-->
     <script type="text/javascript">
     <!--
+    var MyWuhuSlideSystemCanvas = Class.create(WuhuSlideSystemCanvas,{
+      initialize:function($super,options){
+        $super(options);
+        this.coalesceCanvas = new TDF2021BG.CoalesceCanvas({
+          canvas: this.sourceCanvas,
+          width: options.width,
+          height: options.height,
+        });
+      },
+      animate:function($super){
+        this.coalesceCanvas?.update();
+        $super();
+      },
+    });
+
     document.observe("dom:loaded",function(){
       var hash = location.search.toQueryParams();
-      var ws = new WuhuSlideSystem({
+      var ws = new MyWuhuSlideSystemCanvas({
         width: hash.width || 1920,
         height: hash.height || 1080,
         prizegivingStyle: hash.prizegivingStyle || 'bars',
       });
-    });    
+    });
     //-->
     </script>
   </head>
