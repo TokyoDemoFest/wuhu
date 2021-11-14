@@ -43,7 +43,7 @@ if ($_GET["login"]=="failure")
   <input type="submit" value="Go!" />
 </div>
 <div>
-  <small>Ask organizers if you lost your password</small>
+  <small>Forgot your password?  <a href="mailto:contact@tokyodemofest.jp">Contact the organizers</a> using the same email you purchased your ticket with.</small>
 </div>
 </form>
 <?php
