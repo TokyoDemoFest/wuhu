@@ -1,12 +1,13 @@
-body 
-{
-  background: #000;
-  background-color: #000; 
-  color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat:wght@700&display=swap');
+
+body {
+  background-color: #1a1c2c;
+  color: #f4f4f4;
+  font-family: Montserrat, sans-serif;
 }
 body > .overview {
   background: #888;
-} 
+}
 
 .reveal .slides > section div.container {
   width: 100%;
@@ -32,7 +33,6 @@ body > .overview {
 .reveal #pip-countdown,
 .dummy
 {
-  font-family: "Segoe UI";
   font-size: 64px;
 }
 .reveal .slides > section.rotationSlide.image div.container
@@ -65,7 +65,7 @@ body > .overview {
 .reveal .slides > section.prizegivingSlide.entry .eventName,
 .dummy
 {
-    color: #FFFFFF;
+    color: #94b0c2;
     position: absolute;
     right: 40px;
     text-shadow: 0 0 15px #000000;
@@ -80,28 +80,34 @@ body > .overview {
     font-size: 256px;
     font-weight: bold;
     height: 500px;
-    margin-right: 50px;
+    margin-right: 80px;
     padding-top: 50px;
     text-align: right;
     width: 300px;
+    color: #566c86;
 }
 .reveal .slides > section.compoDisplaySlide.entry .title,
 .reveal .slides > section.prizegivingSlide.entry .title,
 .dummy
 {
+    font-size: 80px;
     font-weight: bold;
     text-align: left;
+    color: #94b0c2;
 }
 .reveal .slides > section.compoDisplaySlide.entry .author, 
 .reveal .slides > section.prizegivingSlide.entry .author,
 .dummy
 {
+    margin-top: 16px;
     text-align: left;
+    color: #94b0c2;
 }
 .reveal .slides > section.compoDisplaySlide.entry .comment, 
 .reveal .slides > section.prizegivingSlide.entry .points,
 .dummy
 {
+    margin-top: 32px;
     text-align: left;
     font-size: 32px;
     line-height: normal;
