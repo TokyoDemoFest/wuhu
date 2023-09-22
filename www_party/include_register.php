@@ -99,7 +99,7 @@ if(!$success)
   <input id="password2" name="password2" type="password" required='yes' />
 </div>
 <div>
-  <label for="votekey">Votekey: <small>(Get one at the infodesk to be able to register!)</small></label>
+  <label for="votekey">Votekey: <small>(Request from #votekey-request channel of our <a href="https://discord.gg/nRYF8p6" target="_blank" rel="noreferrer noopener">Discord</a>!)</small></label>
   <input id="votekey" name="votekey" type="text" value="<?=_html($_POST["votekey"])?>" required='yes'/>
 </div>
 <div>
